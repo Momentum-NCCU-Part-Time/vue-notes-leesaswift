@@ -33,7 +33,7 @@ The URL for your web application is `http://localhost:5173`.
 
 The URL for your notes API is `http://localhost:3000/notes/`.
 
-### Using Vue
+### Using Vue 
 
 In the main.js file, a new Vue application is created and attached to the DOM. The application's root component is currently called App and is imported from `App.vue`. In App.vue, you'll see a [Single-File Component](https://vuejs.org/guide/scaling-up/sfc.html) with tags for `script`, `template`, and `style`. You are welcome to edit this file or change it in any way you see fit. You can also create new components and import them into App.vue.
 
@@ -49,7 +49,7 @@ To add a new note, make a `POST` request to `http://localhost:3000/notes/`. You 
 fetch('http://localhost:3000/notes/', {
   method: 'POST', 
   headers: {"Content-Type": "application/json"}, 
-  body: JSON.stringify({ title, body, updatedAt: new Date() })
+  body: JSON.stringify({ title, body, updatedAt: new Date()})
 })
 .then(res => res.json())
 .then(
